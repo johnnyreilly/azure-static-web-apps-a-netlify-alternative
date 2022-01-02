@@ -45,7 +45,6 @@ export default function Home() {
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <p>I'm a staging environment!</p>
           <div className={styles.buttons}>
             {userInfo ? (
               <p>Hello {userInfo.userDetails}</p>
