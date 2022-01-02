@@ -6,10 +6,10 @@ import styles from "./index.module.css";
 
 /**
  * @typedef {object} UserInfo
- * @property {"github"} identityProvider
- * @property {string} userId
- * @property {string} userDetails
- * @property {string[]} userRoles
+ * @prop {"github"} identityProvider
+ * @prop {string} userId
+ * @prop {string} userDetails
+ * @prop {string[]} userRoles
  */
 
 /**
@@ -27,7 +27,7 @@ function useUserInfo() {
     }
 
     getUserInfo().then((ui) => setUserInfo(ui));
-  });
+  }, []);
 
   return userInfo;
 }
